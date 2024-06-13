@@ -1,26 +1,33 @@
 {
   "name": "telegram-bot-sender",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "homepage": "https://dynamicsoft.uz/en",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dynamicuz/dync-tg-bot-sender"
+    "url": "https://github.com/dynamicuz/dync-telegram-bot-sender"
   },
   "scripts": {
     "build": "tsup"
   },
   "keywords": [
     "telegram-bot-sender",
-    "tg-bot-sender"
+    "tg-bot-sender",
+    "dync",
+    "dynamic",
+    "dync-telegram-bot-sender"
+
   ],
   "author": "dync",
   "license": "ISC",
   "description": "Telegram bot sender",
+  "dependencies": {
+    "axios": "^1.7.2"
+
+  },
   "devDependencies": {
-    "axios": "^1.7.2",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   }

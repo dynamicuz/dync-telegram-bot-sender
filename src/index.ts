@@ -1,5 +1,6 @@
 import axios from "axios";
-type parametr = {
+
+type Parametr = {
   key: string;
   value: string | number;
 };
@@ -7,7 +8,7 @@ type parametr = {
 export async function SendMsgFromBot(
   bot_token: string,
   chat_id: string | number,
-  parametrs: parametr[],
+  parametrs: Parametr[],
   title?: string
 ) {
   try {
@@ -25,8 +26,7 @@ export async function SendMsgFromBot(
     };
 
     const url = `https://api.telegram.org/bot${bot_token}/sendMessage`;
-    const response = await axios.post(url, data);
-    // return true;
+    await axios.post(url, data);
   } catch (error) {
     throw error;
   }

@@ -1,11 +1,10 @@
-import { defineConfig } from "tsup";
-import { SendMsgFromBot} from "./src/index"
-export default defineConfig({
-  format: ["cjs", "esm"],
-  entry: ["./src/index.ts"],
-  dts: true,
-  shims: true,
-  skipNodeModulesBundle: true,
-  clean: true,
-});
+// tsup.config.ts
+import { defineConfig } from 'tsup';
 
+export default defineConfig({
+  entry: ['src/index.ts'],
+  format: ['cjs', 'esm'],
+  dts: true,
+  clean: true,
+  sourcemap: true,
+});
